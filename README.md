@@ -1,17 +1,11 @@
 percol Cookbook
 ===============
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+Chef cookbook for [percol](https://github.com/mooz/percol)
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - percol needs toaster to brown your bagel.
+#### Cookbooks
+- [python](http://community.opscode.com/cookbooks/python)
 
 Attributes
 ----------
@@ -36,10 +30,6 @@ e.g.
 
 Usage
 -----
-#### percol::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
 Just include `percol` in your node's `run_list`:
 
 ```json
@@ -53,9 +43,7 @@ Just include `percol` in your node's `run_list`:
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
