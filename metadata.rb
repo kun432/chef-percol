@@ -1,7 +1,9 @@
 name             'percol'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Kuniaki Shimizu'
+maintainer_email 'k.shimizu@8d1w.com'
 license          'All rights reserved'
-description      'Installs/Configures percol'
+description      'chef cookbook for percol (https://github.com/mooz/percol.git)'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.0'
+version          '0.0.1'
+
+depends 'python'
