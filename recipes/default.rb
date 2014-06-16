@@ -31,7 +31,7 @@ if node[:percol][:users].any?
       
       template "#{home_directory}/.percol.d/rc.py" do
         source "rc.py.erb"
-        mode 0644
+        mode "0744"
         owner uid
         group gid
         not_if  { File.exists?("#{home_directory}/.percol.d/rc.py") }
@@ -39,7 +39,7 @@ if node[:percol][:users].any?
       
       template "#{home_directory}/.percol.d/zsh_history_search" do
         source "zsh_history_search.erb"
-        mode 0644
+        mode "0744"
         owner uid
         group gid
         not_if  { File.exists?("#{home_directory}/.percol.d/zsh_history_search") }
