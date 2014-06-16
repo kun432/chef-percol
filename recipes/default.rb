@@ -14,7 +14,7 @@ python_pip "percol" do
   action :install
 end
 
-if node[:percol][:users].any? do
+if node[:percol][:users].any?
   node[:percol][:users].each do |user|
     if node[:etc][:passwd]["#{user}"]
       home_directory = node[:etc][:passwd]["#{user}"][:dir]
