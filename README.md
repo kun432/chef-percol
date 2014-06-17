@@ -9,10 +9,6 @@ Requirements
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
-
-e.g.
-#### percol::default
 <table>
   <tr>
     <th>Key</th>
@@ -21,25 +17,29 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['percol']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['percol']['users']</tt></td>
+    <td>Allay</td>
+    <td>apply percols' rc.py</td>
+    <td><tt>[]</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-Just include `percol` in your node's `run_list`:
+Define users who wants to use percol and include `percol` in your node's `run_list`:
 
 ```json
 {
-  "name":"my_node",
+  "percol": {
+    "users": ["user1","user2"]
+  },
   "run_list": [
     "recipe[percol]"
   ]
 }
 ```
+
+NOTE: If defined user uses zsh as login shell, zsh history search using percol will be automatically enabled.
 
 Contributing
 ------------
@@ -53,4 +53,4 @@ Contributing
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Kuniaki Shimizu <k.shimizu@8d1w.com>
