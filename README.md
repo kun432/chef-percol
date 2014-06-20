@@ -19,7 +19,7 @@ Attributes
   <tr>
     <td><tt>['percol']['users']</tt></td>
     <td>Allay</td>
-    <td>apply percols' rc.py</td>
+    <td>users to apply percols' rc.py</td>
     <td><tt>[]</tt></td>
   </tr>
 </table>
